@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ibititec.lffa.PrimeiraDivisaoTabelaActivity"
+    tools:showIn="@layout/activity_primeira_divisao_tabela"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
+
+        <LinearLayout android:id="@+id/cabecalho_artilahria"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:id="@+id/txtNome"
+                android:text="NOME"
+                />
+            <TextView
+                android:layout_width="63dp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:id="@+id/txtGols"
+                android:text="GOLS"/>
+
+            <TextView
+                android:layout_width="93dp"
+                android:textSize="20sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:id="@+id/txtTime2"
+                android:text="TIME"/>
+        </LinearLayout>
+
+        <!--<LinearLayout android:id="@+id/cabecalho_classificacao"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="gone"-->
+            <!--android:weightSum="1">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="80dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:textAlignment="center"-->
+                <!--android:id="@+id/txtPosicao"-->
+                <!--android:text="Posicao" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="210dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textAlignment="center"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:id="@+id/txtTime"-->
+                <!--android:text="Time" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="93dp"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:id="@+id/txtPontos"-->
+                <!--android:text="Pontos"/>-->
+        <!--</LinearLayout>-->
+
+        <ProgressBar
+            android:id="@+id/progress_primeira_tabela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <ListView
+            android:id="@+id/listview_primeira_tabela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

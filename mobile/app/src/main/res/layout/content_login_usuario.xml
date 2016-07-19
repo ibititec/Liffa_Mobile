@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_login_usuario"
+    android:orientation="vertical"
+    tools:context="com.ibititec.campeonatold.admin.LoginUsuarioActivity">
+
+    <EditText
+        android:hint="E-mail"
+        android:id="@+id/txtEmailUsuario_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtSenhaUsuario_login"
+        android:password="true"
+        android:hint="Senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnLogin_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+    <Button
+        android:id="@+id/btnCadastrar_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Usuário"/>
+
+    <Button
+        android:id="@+id/btnSemCadastrro_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entrar sem cadastro"/>
+</LinearLayout>

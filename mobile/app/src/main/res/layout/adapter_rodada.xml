@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ibititec.lffa.adapter.AdapterRodada"
+    tools:showIn="@layout/activity_adapter_rodada"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txtRodada"
+            android:text="DATA: "
+            android:textSize="20sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtCampo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtData"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txtData"
+        android:layout_below="@+id/txtRodada"
+        android:text="LOCAL: "
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Black" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:failureImage="@drawable/error_img"
+                fresco:failureImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/loading_img"
+                fresco:retryImage="@drawable/retry_img"
+                fresco:roundedCornerRadius="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/txtversus2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" X "
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Black" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center_vertical">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imageView4"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                fresco:actualImageScaleType="centerCrop"
+                fresco:failureImage="@drawable/error_img"
+                fresco:failureImageScaleType="centerInside"
+                fresco:placeholderImage="@drawable/loading_img"
+                fresco:retryImage="@drawable/retry_img"
+                fresco:roundedCornerRadius="5dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/btnTempoRealPartida1"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="170dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:paddingBottom="20dp"-->
+    <!--android:paddingTop="20dp"-->
+    <!--android:src="@drawable/temporeal"/>-->
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:fresco="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--tools:context="com.ibititec.campeonatold.adapter.AdapterRodada"-->
+    <!--tools:showIn="@layout/activity_adapter_rodada">-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtRodada"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:text="RODADA: "-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtData"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_toRightOf="@+id/txtRodada"-->
+            <!--android:text="DATA: "-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtCampo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignEnd="@+id/txtData"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignRight="@+id/txtData"-->
+        <!--android:layout_below="@+id/txtRodada"-->
+        <!--android:text="CAMPO: "-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtHrJogo1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="left|center_vertical"-->
+            <!--android:text="Hr: "-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_horizontal|center_vertical"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/imageView2"-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--fresco:actualImageScaleType="centerCrop"-->
+                <!--fresco:failureImage="@drawable/error_img"-->
+                <!--fresco:failureImageScaleType="centerInside"-->
+                <!--fresco:placeholderImage="@drawable/loading_img"-->
+                <!--fresco:retryImage="@drawable/retry_img"-->
+                <!--fresco:roundedCornerRadius="5dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/txtversus"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" X "-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/imageView3"-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:layout_gravity="right"-->
+                <!--fresco:actualImageScaleType="centerCrop"-->
+                <!--fresco:failureImage="@drawable/error_img"-->
+                <!--fresco:failureImageScaleType="centerInside"-->
+                <!--fresco:placeholderImage="@drawable/loading_img"-->
+                <!--fresco:retryImage="@drawable/retry_img"-->
+                <!--fresco:roundedCornerRadius="5dp" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--<ImageButton-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/btnTempoRealPartida1"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:src="@drawable/temporeal"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="30dp"/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="20dp">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/txtHrJogo2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="Hr: "-->
+            <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_horizontal|center_vertical">-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/imageView4"-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--fresco:actualImageScaleType="centerCrop"-->
+                <!--fresco:failureImage="@drawable/error_img"-->
+                <!--fresco:failureImageScaleType="centerInside"-->
+                <!--fresco:placeholderImage="@drawable/loading_img"-->
+                <!--fresco:retryImage="@drawable/retry_img"-->
+                <!--fresco:roundedCornerRadius="5dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/txtversus2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" X "-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium" />-->
+
+            <!--<com.facebook.drawee.view.SimpleDraweeView-->
+                <!--android:id="@+id/imageView5"-->
+                <!--android:layout_width="48dp"-->
+                <!--android:layout_height="48dp"-->
+                <!--fresco:actualImageScaleType="centerCrop"-->
+                <!--fresco:failureImage="@drawable/error_img"-->
+                <!--fresco:failureImageScaleType="centerInside"-->
+                <!--fresco:placeholderImage="@drawable/loading_img"-->
+                <!--fresco:retryImage="@drawable/retry_img"-->
+                <!--fresco:roundedCornerRadius="5dp" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/btnTempoRealPartida2"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:src="@drawable/temporeal"/>-->
+
+<!--</LinearLayout>-->

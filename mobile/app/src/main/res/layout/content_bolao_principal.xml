@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_bolao_principal"
+    tools:context="com.ibititec.campeonatold.bolao.BolaoPrincipalActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/btnPalpitesBolao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparente"
+            android:src="@drawable/palpite" />
+
+        <TextView
+            android:id="@+id/txtPalpitesBolao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PALPITES"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20dp"
+            android:layout_weight="1.15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/btnClassificaoBolao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparente"
+            android:src="@drawable/classificacao" />
+
+        <TextView
+            android:id="@+id/txtClassificacaoBolao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLASSIFICAÇÃO"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20dp"
+            android:layout_weight="1.15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/btnRegrasBolao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Transparente"
+            android:src="@drawable/regulamento" />
+
+        <TextView
+            android:id="@+id/txtRegrasBolao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGRAS BOLÃO"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="20dp"
+            android:layout_weight="1.15" />
+    </LinearLayout>
+
+</LinearLayout>

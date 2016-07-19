@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ibititec.lffa.PrimeiraDivisaoActivity"
+    tools:showIn="@layout/activity_primeira_divisao">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/btnPrimeiraDivisaoTabela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Transparente"
+                android:src="@drawable/tabela" />
+
+            <TextView
+                android:id="@+id/txtTabela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TABELA"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnPrimeiraDivisaoClassificacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@color/Transparente"
+                android:src="@drawable/classificacao" />
+
+            <TextView
+                android:id="@+id/txtClassificacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtAjuda"
+                android:layout_alignBottom="@+id/txtAjuda"
+                android:text="CLASSIFICAÇÃO"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"  />
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/btnPrimeiraDivisaoArtilharia"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/Black"-->
+                <!--android:src="@drawable/pontuador" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/txtMaiorPontuador"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="MAIOR PONTUADOR"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:textColor="@color/White"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:textSize="20sp" />-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/btnPrimeiraDivisaoBolao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/Transparente"
+                android:src="@drawable/pdbolao" />
+
+            <TextView
+                android:id="@+id/txtBolao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOLÃO"
+                android:paddingLeft="20dp"
+                android:textColor="@color/Black"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20dp"
+                android:layout_weight="0.26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnPrimeiraDivisaoSobre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnPrimeiraDivisaoClassificacao"
+                android:background="@color/Transparente"
+                android:src="@drawable/help" />
+
+            <TextView
+                android:id="@+id/txtAjuda"
+                android:layout_width="176dp"
+                android:layout_height="wrap_content"
+                android:text="AJUDA"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/Black"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"  />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

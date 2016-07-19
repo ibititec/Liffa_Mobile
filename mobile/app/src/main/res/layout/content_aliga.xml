@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ibititec.lffa.ALigaActivity"
+    tools:showIn="@layout/activity_aliga">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:paddingBottom="80dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/liga_escudo" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fundada em 2012, a Liga Fluminense de Futebol Americano tem como missão promover a prática do futebol americano na grama em todo Estado do Rio de Janeiro e sua primeira categoria foi o NOPAD (jogado sem ombreiras e capacetes).
+Em 2016 a LiFFA mantém seu torneio já tradicional, e inicia o primeiro Campeonato Estadual Fullpad do RJ."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoje a liga conta com 18 times:
+Angra dos Reis Destroyers, Blaze F.A, Magé Barões, Juiz de Fora Mamutes, Botafogo Reptiles, Islanders RJ, Macaé Oilers, Nova Friburgo Yetis, Petrópolis Wolves, Teresópolis Rockers, Rio das Ostras Warriors, Niterói Federals, Juiz de Fora Red Fox, Mangaratiba Gaditas, Goytacá Indians, São Gonçalo Shadows, Valença Hunters, Volta Redonda Falcons"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

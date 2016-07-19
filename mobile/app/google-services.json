@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_id": "liga-fluminense-f-americano",
+    "project_number": "1026507082665",
+    "name": "Liga Fluminense F Americano"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026507082665:android:e9196f697e3429d4",
+        "client_id": "android:com.ibititec.lffa",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.ibititec.lffa",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-74980022-5"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

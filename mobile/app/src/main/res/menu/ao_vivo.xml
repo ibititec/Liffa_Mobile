@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PartidaTempoRealActivity">
+    <item
+        android:id="@+id/action_atualizar_aoVivo"
+        android:orderInCategory="100"
+        android:title="Atualizar"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_refresh_white_48dp"
+        />
+</menu>
